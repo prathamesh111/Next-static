@@ -16,6 +16,7 @@ export async function getStaticProps(context){
 }
 
 
+
 export default function People({ data }) {
   return (
     <div >
