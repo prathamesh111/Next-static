@@ -27,12 +27,12 @@ export async function getStaticPaths(context){
 export default function Products({data}){
     return(
     <div>
-        <div>
-            <div className="prod_title">{product.title}</div>
-            <img src={product.image}></img>
-            <div className="prod_cat">{product.category}</div>
-            <div className="prod_desc">{product.description}</div>
-        </div>
+           <div>
+                <div className="prod_title">{data.title}</div>
+                <img src={data.image}></img>
+                <div className="prod_cat">{data.category}</div>
+                <div className="prod_desc">{data.description}</div>
+            </div>
     </div>
     )
 }

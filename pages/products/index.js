@@ -3,6 +3,7 @@ import Product from '../../components/Product';
 import React, {useState} from 'react';
 
 
+
 export async function getStaticProps(context){
     const res= await fetch ('https://fakestoreapi.com/products');
     const data = await res.json();
@@ -25,7 +26,7 @@ const[inputText, setInputText]= useState("");
   return (
     <div>
         <h1 className="text-center">products</h1>
-        <input type="text" placeholder="Search..." onChange={(e)=>{setInputText(e.target.value)}} ></input>
+        <input type="text" className="search-input" placeholder="Search..." onChange={(e)=>{setInputText(e.target.value)}} ></input>
         <div className="flex flex-wrap justify-center">
         <div className="row">
         {
