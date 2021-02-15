@@ -27,7 +27,7 @@ export default function Planets({ data }) {
                 const urlArr = planet.url.split('/');
                 const id = urlArr[urlArr.length - 2];
                 return(
-                    <div className="flex flex-wrap justify-center rounded-md p-5 bg-gray-600 mx-4 my-4 ">
+                    <div className="flex flex-wrap justify-center rounded-md p-5 bg-gray-600 mx-4 my-4">
                         <Link href={`/planet/${id}`} >{planet.name}</Link>
                     </div>  
                 )

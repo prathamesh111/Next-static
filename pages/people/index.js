@@ -3,7 +3,6 @@ import Link from 'next/link';
 export async function getStaticProps(context){
     const res= await fetch ('https://swapi.dev/api/people');
     const data = await res.json();
-    // console.log(data);
 
     if(!data){
         return{

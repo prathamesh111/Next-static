@@ -1,6 +1,6 @@
 const privacyp = () =>{
     return(
-        <div><h1>joy</h1></div>
+        <div><h1>test</h1></div>
     )
 }
 

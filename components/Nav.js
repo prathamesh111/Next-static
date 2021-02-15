@@ -9,6 +9,7 @@ export default function Nav(){
                 <div className="ml-8"><Link href='/people'>People</Link></div>
                 <div className="ml-8"><Link href='/planet'>Planet</Link></div>
                 <div className="ml-8"><Link  href="/vehicle">Vehicle</Link></div>
+                <div className="ml-8"><Link  href="/products">Products</Link></div>
             </div>
         </div>
     )
